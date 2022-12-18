@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <!-- custom--css -->
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/service.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
     <title>Alabere-Personal Website</title>
 </head>
@@ -34,7 +35,7 @@
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
                 <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
                 <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
@@ -86,106 +87,129 @@
                         I am also passionate about writing tech articles and technology
                         including programming which are clearly open source.
                     </p>
-                    <button class="btn btn-default toggler">view skills</button>
+                    <button class="btn"><a href="#skills">skills</a></button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- divider section -->
+    <!-- service section -->
 
     <section id="services">
-        <div class="divider">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="divider__wrapper divider-one">
-                            <div class="icon"><img src="./images/icons/regression.png" /></div>
-                            <h2>Frontend Web</h2>
-                            <p>
-                                I build responsive web applications using modern frameworks
-                            </p>
+        <div class="container">
+            <div class="container__wrapper row">
+                <div class="col-md-4 col-sm-6 container__1">
+                    <div class="divider__wrapper">
+                        <div class="icon">
+                            <img src="./image/front1.gif" />
                         </div>
+                        <h2>Frontend Web</h2>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="divider__wrapper divider-two">
-                            <div class="icon"><img src="./images/icons/backend.png" /></div>
-                            <h2>Backend</h2>
-                            <p>
-                                I write efficient RESTapis with Express Node, graphql, and also perform automation tests
-                                and web
-                                scraping with Puppeteer.
-                            </p>
-                        </div>
+                    <div class="back">
+                        <h2>Frontend Web</h2>
+                        <p>
+                            I build responsive web applications using modern frameworks
+                        </p>
                     </div>
-                    <div class="col-md-4 col-sm-12 pb-4">
-                        <div class="divider__wrapper divider-three">
-                            <div class="icon"><img src="./images/icons/cloud-service.png" /></div>
-                            <h2>DevOps</h2>
-                            <p>
-                                I am experienced in using Docker, kubernetes, AWS, GCP and building stable
-                                microservices.
-                                <!-- i also utilize the advantage of PWAs to make existing web applications flexible. -->
-                            </p>
+                </div>
+                <div class="col-md-4 col-sm-6 container__1">
+                    <div class="divider__wrapper">
+                        <div class="icon">
+                            <img src="./image/front2.jpeg" />
                         </div>
+                        <h2>Backend</h2>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="divider__wrapper divider-two">
-                            <div class="icon"><img src="./images/icons/web-design.png" /></div>
-                            <h2>Tools</h2>
-                            <p>
-                                Figma, Adobexd, canvas
-                            </p>
-                        </div>
+                    <div class="back">
+                        <h2>Backend</h2>
+                        <p>
+                            I write efficient RESTapis with Express Node, graphql, and also perform automation tests
+                            and web
+                            scraping with Puppeteer.
+                        </p>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="divider__wrapper divider-four">
-                            <div class="icon"><img src="./images/icons/open-source.png" /></div>
-                            <h2>Software</h2>
-                            <p>
-                                I build secure apps using Python Typescript, nodejs, express, electronjs.
-                            </p>
+                </div>
+                <div class="col-md-4 col-sm-12 pb-4 container__1">
+                    <div class="divider__wrapper">
+                        <div class="icon">
+                            <img src="./image/fron4.png" />
                         </div>
+                        <h2>DevOps</h2>
+                    </div>
+                    <div class="back">
+                        <h2>DevOps</h2>
+                        <p>
+                            I am experienced in using Docker, kubernetes, AWS, GCP and building stable
+                            microservices.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 container__1">
+                    <div class="divider__wrapper">
+                        <div class="icon">
+                            <img src="./image/front3.jpg" />
+                        </div>
+                        <h2>Tools</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Tools</h2>
+                        <p>
+                            Figma, Adobexd, canvas
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 container__1">
+                    <div class="divider__wrapper">
+                        <div class="icon">
+                            <img src="./image/front5.jpg" />
+                        </div>
+                        <h2>Software</h2>
+                    </div>
+                    <div class="back">
+                        <h2>Software</h2>
+                        <p>
+                            I build secure apps using Python Typescript, nodejs, express, electronjs.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- about section -->
-    <div id="about">
-        <div class="container flip-card">
-            <div class="inner">
-                <div class="row back">
+
+    <!-- skills section -->
+    <div id="skills">
+        <div class="container">
+            <div class="inner__container">
+                <div class="row back__container">
                     <h2>Skills</h2>
                     <div class="col-md-6 col-sm-12 about-des ">
                         <strong>Frontend web development</strong>
+                        <span class="pull-right">90%</span>
+                        <div class="progress">
+                            <div class="progress-bar  progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                        </div>
+                        <strong>Databases [ MongoDb, MySql, SQLlite ]</strong>
                         <span class="pull-right">90%</span>
                         <div class="progress">
                             <div class="progress-bar bg-info progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 90%;"></div>
                         </div>
-                        <!-- <strong>DevOps Tools [ Docker, Kubernetes, AWS elastic beanstalk ]</strong>
-                        <span class="pull-right">65%</span>
-                        <div class="progress">
-                            <div class="" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 65%;"></div>
-                        </div> -->
-
                         <strong>Frontend Frameworks(React &amp; Gatsby )</strong>
                         <span class="pull-right">80%</span>
                         <div class="progress">
-                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                            <div class="progress-bar bg-gradient progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 80%;"></div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 about-des">
+
                         <strong>Backend (NODEJs) [Rest APIs, Web Scrapping, Electronjs]</strong>
                         <span class="pull-right">85%</span>
                         <div class="progress">
-                            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+                            <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 85%;"></div>
                         </div>
@@ -193,25 +217,123 @@
                         <strong>Version Control System [ GIT ]</strong>
                         <span class="pull-right">85%</span>
                         <div class="progress">
-                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+                            <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
                                 role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
                                 style="width: 85%;"></div>
                         </div>
-                        <strong>Databases [ MongoDb, MySql, SQLlite ]</strong>
-                        <span class="pull-right">90%</span>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
-                                role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                style="width: 90%;"></div>
-                        </div>
+
                     </div>
-                    <a href="https://github.com/Sax-Yusuph" class="btn btn-default toggler"><i
+                    <a href="https://github.com/Alabere-coder" class="btn btn-default toggler"><i
                             class="fab fa-github mr-3"></i>Check my Github repo</a>
-                    <!-- <button class="btn btn-default toggler"><i class="fas fa-arrow-left mr-3"></i>Go back</button> -->
+                    <button class="btn btn-default toggler"><i class="fas fa-arrow-left mr-3"></i>Go back</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+    <!-- footer section -->
+    <footer>
+        <div class="row d-flex justify-content-between align-content-center bg-purple">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8">
+                <div class="container p-30">
+                    <div class="single-footer-caption">
+                        <!-- logo -->
+                        <div class="footer-logo">
+                            <h1 class="">Get in Touch</h1>
+                        </div>
+                        <div class="footer-tittle">
+                            <div class="footer-pera">
+                                <p class="info1">
+                                    Planning on something wonderful? i would be super happy to be part of
+                                    that journey. Feel free to reach me on
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-number">
+                            <h4><span>+234 </span><span class="text-secondary">9044348459</span></h4>
+                            <p>alabere007@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 pb-5">
+                <div class="container p-30">
+                    <div class="single-footer-caption">
+                        <div class="footer-tittle">
+                            <h1 class=" mb-30">Address:</h1>
+                        </div>
+                        <div class="footer-cap text-dark">
+                            <span>Kwara State</span>
+                            <p>16 Ogidi Street, Kiama Road, Kwara.</p>
+                        </div>
+                        <div class="footer-cap text-dark">
+                            <span>Github</span>
+                            <p>Alabere-Coder</p>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href="https://github.com/Alabere-coder" class="fab fa-github"></a></li>
+                            <li><a href="https://www.linkedin.com/in/isiaq-abdul-azeez-84ba24259/"
+                                    class="fab fa-linkedin"></a></li>
+                            <li><a href="mailto:alabere007@gmail.com" class="far fa-envelope"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- contact form -->
+            <div id="contact" class="col-xl-5 col-lg-4 col-md-4 col-sm-12 bg-dark pb-30">
+                <div class="container p-30">
+                    <div class="row single-footer-caption">
+                        <div class="footer-tittle">
+                            <h1 class=" mb-30">Drop Me a Message</h1>
+                        </div>
+                        <form id="contact-form">
+                            <div class="col-md-6 col-sm-6 pl-0">
+                                <label for="name">NAME</label>
+                                <input name="name" type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6 col-sm-6 pl-0">
+                                <label for="email">EMAIL</label>
+                                <input name="email" type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-12 col-sm-12 pl-0">
+                                <label for="message">MESSAGE</label>
+                                <textarea name="message" rows="2" class="form-control" id="message" required></textarea>
+                                <button type="submit" name="submit"
+                                    class="btn-alt btn-default btn-fullwidth">SEND</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- copyright section -->
+    <div class="copyright mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 align-center">
+                    <p>Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | Built with &#10084; by Alabere-Abdulazeez
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
     <!-- bootsrap--cdn link -->

@@ -1,0 +1,150 @@
+/* body {
+        background: linear-gradient(to left, tomato, orange);
+    } */
+
+* {
+    box-sizing: border-box;
+}
+
+.container__wrapper {
+    background-image: url(../image/World_map.png);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.container__wrapper .container__1:nth-child(1) {
+    padding-bottom: 20rem;
+}
+.container__1 {
+    position: relative;
+    height: 19rem;
+}
+
+.icon img {
+    /* border: 2px solid; */
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 19rem;
+    height: 19rem;
+    /* border-radius: 10px; */
+}
+
+.divider__wrapper h2 {
+    padding-bottom: 4px;
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+}
+
+.divider__wrapper p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    color: white;
+    padding: 205px;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    color: white;
+    width: 19rem;
+    height: 19rem;
+    /* border-radius: 10px; */
+    /* padding: 15px; */
+    transform: perspective(600px) rotateY(180deg);
+    transition: transform .5s linear 0s;
+    backface-visibility: hidden;
+}
+.container__1:nth-child(1) .back {
+    background-color: rgb(233, 17, 233);
+    background-image: url("../image/icon/web-design.png");
+    background-size: contain;
+    width: 19rem;
+    height: 19rem;
+    /* border: 2px solid; */
+    /* color: pink;
+    resize: both; */
+}
+.container__1:nth-child(2) .back {
+    background-color: var(--green-color);
+    background-image: url("../image/icon/backend.png");
+    background-size: contain;
+    width: 19rem;
+    height: 19rem;
+    border: 2px solid;
+}
+.container__1:nth-child(3) .back {
+    background-color: var(--purple-color);
+    background-image: url("../image/icon/development.png");
+    background-size: contain;
+    width: 19rem;
+    height: 19rem;
+    border: 2px solid;
+}
+.container__1:nth-child(4) .back {
+    background-color: var(--violent-color);
+    background-image: url("../image/icon/programmer.png");
+    background-size: contain;
+    width: 19rem;
+    height: 19rem;
+    border: 2px solid;
+}
+.container__1:nth-child(5) .back {
+    background-color: var(--blue-color);
+    background-image: url("../image/icon/regression.png");
+    background-size: contain;
+    width: 19rem;
+    height: 19rem;
+    border: 2px solid;
+}
+.divider__wrapper {
+    color: white;
+    transform: perspective(600px) rotateY(10deg);
+    /* transition: transform .5s linear 0s; */
+    transition: all 400ms ease;
+}
+
+.container__1:hover>.front {
+    transform: perspective(600px) rotateY(180deg);
+    cursor: pointer;
+}
+
+.container__1:hover>.back {
+    transform: perspective(600px) rotateY(-30deg);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 800px) {
+    .container__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media(max-width: 500px) {
+    .container__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
