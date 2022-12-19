@@ -68,9 +68,17 @@
     transition: transform .5s linear 0s;
     backface-visibility: hidden;
 }
+
+#services .icon-1 img {
+    position: absolute;
+    width: 19rem;
+    height: 19rem;
+    z-index: 100;
+}
+
 .container__1:nth-child(1) .back {
     background-color: rgb(233, 17, 233);
-    background-image: url("../image/icon/web-design.png");
+    /* background-image: url("../image/icon/web-design.png"); */
     background-size: contain;
     width: 19rem;
     height: 19rem;
