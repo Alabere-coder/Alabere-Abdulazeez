@@ -1,6 +1,13 @@
-/* body {
-        background: linear-gradient(to left, tomato, orange);
-    } */
+/* #skills .inner__container {
+    border: 2px solid red;
+}
+#skills .inner__container .h2 {
+    top: 3rem;
+} */
+
+
+
+
 
 * {
     box-sizing: border-box;
@@ -77,42 +84,40 @@
 }
 
 .container__1:nth-child(1) .back {
-    background-color: rgb(233, 17, 233);
+    background-color: var(--dark-color);
     /* background-image: url("../image/icon/web-design.png"); */
     background-size: contain;
     width: 19rem;
     height: 19rem;
-    /* border: 2px solid; */
-    /* color: pink;
-    resize: both; */
+    border: 2px solid;
 }
 .container__1:nth-child(2) .back {
-    background-color: var(--green-color);
-    background-image: url("../image/icon/backend.png");
+    background-color: var(--dark-color);
+    /* background-image: url("../image/icon/backend.png"); */
     background-size: contain;
     width: 19rem;
     height: 19rem;
     border: 2px solid;
 }
 .container__1:nth-child(3) .back {
-    background-color: var(--purple-color);
-    background-image: url("../image/icon/development.png");
+    background-color: var(--dark-color);
+    /* background-image: url("../image/icon/development.png"); */
     background-size: contain;
     width: 19rem;
     height: 19rem;
     border: 2px solid;
 }
 .container__1:nth-child(4) .back {
-    background-color: var(--violent-color);
-    background-image: url("../image/icon/programmer.png");
+    background-color: var(--dark-color);
+    /* background-image: url("../image/icon/programmer.png"); */
     background-size: contain;
     width: 19rem;
     height: 19rem;
     border: 2px solid;
 }
 .container__1:nth-child(5) .back {
-    background-color: var(--blue-color);
-    background-image: url("../image/icon/regression.png");
+    background-color: var(--dark-color);
+    /* background-image: url("../image/icon/regression.png"); */
     background-size: contain;
     width: 19rem;
     height: 19rem;
@@ -121,7 +126,6 @@
 .divider__wrapper {
     color: white;
     transform: perspective(600px) rotateY(10deg);
-    /* transition: transform .5s linear 0s; */
     transition: all 400ms ease;
 }
 
@@ -138,19 +142,24 @@
 
 
 
-
-
-
-
-
-@media(max-width: 800px) {
-    .container__wrapper {
-        grid-template-columns: repeat(2, 1fr);
-
+@media screen and (max-width: 1024px) {
+    container__wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        gap:5px;
     }
 }
 
-@media(max-width: 500px) {
+
+
+
+@media(min-width: 768px) {
+    .container__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media(max-width: 480px) {
     .container__wrapper {
         grid-template-columns: repeat(1, 1fr);
 

@@ -39,8 +39,32 @@ body {
     border-radius: 30px;
     
 }
+/* .nav__container .left__nav {
+    border: 2px solid var(--dark-color);
+    height: 3rem;
+    width: 9rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-radius: 100px;
+    background: repeating-linear-gradient(#2A3B47, #697477);
+} */
+.nav__container .left__nav {
+    float: left;
+    margin-left: 1%;
+    padding-left: 1.2rem;
+    height: 3rem;
+    width: 9rem;
+    border: 2px solid ;
+    border-radius: 100px;
+    /* background: repeating-linear-gradient(#2A3B47, #697477); */
+}
 .left__nav a {
     text-decoration: none;
+    color: var(--white-color);
+    font-weight: 700;
+}
+.left__nav a span {
+    color: var(--red-color);
 }
 
 .nav__menu {
@@ -83,60 +107,9 @@ body {
 }
 
 
-/* CONTACT-----BUTTON */
-.contact__btn {
-    color: #000e17;
-    border: 1px solid #000e17;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    transition: all 400ms ease;
-}
-
-.header__btn {
-    background: linear-gradient(-30deg, #e5a55d, #ff7b02 #e5a55d);
-    background: #fff;
-    position: absolute;
-    left: 3%;
-    top: 8vw;
-    z-index: 100;
-}
-.header__btn:hover {
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
-    color: #000e17;
-    transform: translateY(-1rem);
-}
-.contact__btn i {
-    font-size: 3.5rem;
-    position: absolute;
-}
-.header__btn p {
-    font-size: 1rem;
-    font-weight: 600;
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    animation: spinText 15s linear infinite;
-}
-.header__btn p span {
-    position: absolute;
-    transform-origin: 0.3rem 5rem ;
-}
-
-@keyframes spinText {
-
-    to {
-        transform: rotate(360deg);
-    }
-    
-}
 
 .text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
     3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
     0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
     7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
@@ -177,24 +150,82 @@ body {
 /* about section */
 
 #about {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-top: 60px;
+    padding-bottom: 60px;
 
 }
-#about .container {
-    border: 2px solid var(--violent-color);
-    padding: 20px;
-    border-radius: 20px;
-}
+
 #about .about__content {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 7rem;
+    /* border: 2px solid var(--violent-color); */
+    padding-left: 4rem;
+    padding-right: 5rem;
+    gap: 4rem;
 }
 #about .about__container {
-    padding: 50px;
+    position: absolute;
+    left: 37rem;
+    top: 3rem;
+    /* padding: 1px;
+    margin-top: 0rem; */
+}
+#about .about__container .info1 {
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+#about .about__container .info2 {
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
+}
+
+#about .about__container h2 {
+    padding-bottom: 2rem;
+    text-shadow: 10px 10px 6px black;
+}
+
+#about .about__container .disign {
+    height: 2rem;
+    width: 18rem;
+    border: 2px solid var(--text-color);
+    background: var(--white-color);
+    border-radius: 20px;
+    position: absolute;
+    left: 15rem;
+    box-shadow: 10px 10px 6px black;
+
+}
+#about .about__container button {
+    
+    height: 3rem;
+    width: 5rem;
+    border: 2px solid var(--text-color);
+    background: var(--text-color);
+}
+#about .about__container button:hover {
+    background: transparent;
+}
+#about .about__container button a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1rem;
+}
+#about .image__container .img__responsive {
+    width: 25rem;
+    height: 25rem;
+}
+#about .image__container {
+    border: 1px solid;
+    box-shadow: 5px 10px 40px 10px rgb(14, 13, 13);
 }
 
 /* contact section */
@@ -362,95 +393,75 @@ footer a:hover {
 
 
 
-.flip-card .inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition-duration: 0.7s;
-  transition-property: transform, opacity;
-  transform-style: preserve-3d;
-}
 
-.flip-card .inner .front,
-.flip-card .inner .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-
-
-}
-
-.flip-card .inner .front {
-  background-color: #0f2d44;
-  background-image: url("../images/bg01.png");
-}
-.flip-card .inner .back {
-  transform: rotateY(180deg);
-  padding: 5px 30px 0;
-  background-color: #0f2d44;
-  background-image: url("../images/bg01.png");
-}
-
-.flip-card .inner .back h2 {
-  text-align: center;
-}
-.flip-card .inner .back .toggler {
-  float: right;
-}
-.flip-card .inner .back .github-btn {
-  float: left;
-}
-
-.flip .inner {
-  transform: rotateY(180deg);
-}
-
-.text-shadow {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
-    3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
-    0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
-    7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
-    9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
-    11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
-    13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
-    0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
-    17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
-    19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
-}
-
-.progress {
-  margin-bottom: 30px;
-}
-.pb-30 {
-  padding-bottom: 30px;
-}
-
-.mr-5 {
-  margin-right: 20px;
-}
-.mt-5 {
-  margin-top: 12px;
-}
-.nivo-lightbox-caption {
-  color: #0d2538;
-}
-.nivo-lightbox-title {
-  font-family: "fira code", monospace;
-}
-
-.z-depth {
-  z-index: 100;
-}
-.d-0{
-  display: flex ;
+/* @media screen and (max-width: 920px) {
+    body {
+        background: blue;
+    }
 }
 
 
 
+@media screen and (max-width: 600px) {
+    body {
+        background: red;
+    }
+} */
 
+
+
+
+/* CONTACT-----BUTTON */
+.contact__btn {
+    color: #000e17;
+    border: 1px solid #000e17;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.header__btn {
+    background: linear-gradient(-30deg, #e5a55d, #ff7b02 #e5a55d);
+    background: #fff;
+    position: absolute;
+    left: 3%;
+    top: 8vw;
+    z-index: 100;
+}
+.header__btn:hover {
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
+    color: #000e17;
+    transform: translateY(-1rem);
+}
+.contact__btn i {
+    font-size: 3.5rem;
+    position: absolute;
+}
+.header__btn p {
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    animation: spinText 15s linear infinite;
+}
+.header__btn p span {
+    position: absolute;
+    transform-origin: 0.3rem 5rem ;
+}
+
+@keyframes spinText {
+
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
 
 /* ===========Medi-Queries========= */
 
@@ -484,13 +495,13 @@ footer a:hover {
         display: none;
     }
     .nav__menu {
-        position: fixed;
-        top: 3.5rem;
-        right: 2.5%;
+        position: absolute;
+        top: 2.2rem;
+        right: -1rem;
         height: fit-content;
         width: 18rem;
         flex-direction: column;
-        gap: 0;
+        gap: -1rem;
         display: flex;
     }
     .nav__menu li {
