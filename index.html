@@ -23,7 +23,7 @@
     <title>Alabere-Coder</title>
 </head>
 
-<body>
+<body class="active">
     <!-- navigation -->
     <div class="nav__body">
         <div class="container nav__container">
@@ -32,7 +32,6 @@
                     <h2><span>A</span>labere</h2>
                 </a>
             </div>
-
             <div class="right__nav">
                 <ul class="nav__menu">
                     <li><a href="#home">Home</a></li>
@@ -41,6 +40,9 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact us</a></li>
                 </ul>
+                <div class="theme__btn">
+                    <i class="fas fa-adjust fa-2x"></i>
+                </div>
                 <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
                 <button id="close-menu-btn"><i class="uil uil-multiply"></i></i></button>
             </div>
@@ -69,34 +71,33 @@
     </section>
 
     <!-- about section -->
-    <div id="about">
-        <div class="container">
-            <div class="about__content">
-                <div class="image__container">
-                    <img src="./image/about.jpg" class="img__responsive" alt="about img" />
-                </div>
-                <div class="about__container">
-                    <div class="disign"></div>
-                    <h2>About Me</h2>
-                    <p class="info1">
-                        I am <span>Alabere Abdulazeez</span>, a frontend developer, that loves building opensource
-                        applications
-                        for the
-                        general developer society. I enjoy building interactive and superb UIs that are highly
-                        efficient, convenient and friendly to the users. I have 2+ yrs experience in web development
-                        especially
-                        JavaScript and Typescript and i have built projects during this period of time and i found
-                        it
-                        interesting.
-                    </p>
-                    <p class="info2">
-                        I am also passionate about writing tech articles and technology
-                        including programming which are clearly open source.
-                    </p>
-                    <button class="btn"><a href="#skills">skills</a></button>
-                </div>
+    <div id="about" class="active">
+        <div class="container1 about__content">
+            <div class="image__container">
+                <img src="./image/about.jpg" class="img__responsive" alt="about img" />
+            </div>
+            <div class="about__container">
+                <div class="disign"></div>
+                <h2>About Me</h2>
+                <p class="info1">
+                    I am <span>Alabere Abdulazeez</span>, a frontend developer, that loves building opensource
+                    applications
+                    for the
+                    general developer society. I enjoy building interactive and superb UIs that are highly
+                    efficient, convenient and friendly to the users. I have 2+ yrs experience in web development
+                    especially
+                    JavaScript and Typescript and i have built projects during this period of time and i found
+                    it
+                    interesting.
+                </p>
+                <p class="info2">
+                    I am also passionate about writing tech articles and technology
+                    including programming which are clearly open source.
+                </p>
+                <button class="btn"><a href="#skills">skills</a></button>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- service section -->
@@ -186,9 +187,173 @@
 
 
     <!-- skills section -->
-    <div id="skills">
-        <!-- <div class="container"> -->
-        <div class="container inner__container position-relative">
+    <main class="container" id="skills">
+
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span></h2>
+            </div>
+            <p class="port-text">
+                Here is some of my work that I have done in various programming languages.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="./image/portfolio-img10.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>View on GitHub</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="./image/portfolio-img2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>View on GitHub</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="./image/portfolio-img3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>View on GitHub</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="./image/portfolio-img4.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>View on GitHub</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="./image/portfolio-img8.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>View on GitHub</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="./image/portfolio-img9.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>View on GitHub</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container ">
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">ReactJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">NodeJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">68%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">BOOTSRAP</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- <div class="container"> -->
+    <!-- <div class="container inner__container position-relative">
             <div class="row skills__container p-5 ">
                 <h2 class="position-absolute h2">Skills</h2>
                 <div class="col-md-6 col-sm-12 about-des ">
@@ -234,61 +399,117 @@
                         class="fab fa-github mr-3"></i>Check my Github repo</a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
 
 
     <!-- footer section -->
-    <footer>
-        <div class="row d-flex justify-content-between align-content-center bg-success">
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8">
-                <div class="container p-30">
-                    <div class="single-footer-caption">
-                        <!-- logo -->
-                        <div class="footer-logo">
-                            <h1 class="">Get in Touch</h1>
+    <section class="container contact" id="contact">
+        <div class="contact-container">
+            <div class="main-title">
+                <h2>Contact <span>Me</span></h2>
+            </div>
+            <div class="contact-content-con">
+                <div class="left-contact">
+                    <h4>Contact me here</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        In, laborum numquam? Quam excepturi perspiciatis quas quasi.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location:</span>
+                            </div>
+                            <p>
+                                ... Nigeria, Kwara State
+                            </p>
                         </div>
-                        <div class="footer-tittle">
-                            <div class="footer-pera">
-                                <p class="info1">
-                                    Planning on something wonderful? i would be super happy to be part of
-                                    that journey. Feel free to reach me on
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email:</span>
+                            </div>
+                            <p>
+                                <span>alabere007@gmail.com</span>
+                            </p>
+                        </div>
+                        <!-- <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Education</span>
+                                </div>
+                                <p>
+                                    <span>: Sussex University, East Sussex</span>
                                 </p>
+                            </div> -->
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-user-graduate"></i>
+                                <span>Mobile Number:</span>
+                            </div>
+                            <p>
+                                <span>+2349044348459</span>
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-globe-africa"></i>
+                                <span>Languages:</span>
+                            </div>
+                            <p>
+                                <span>English</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                            <a href="https://www.linkedin.com/in/isiaq-abdul-azeez-84ba24259/" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://github.com/Alabere-coder" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-contact">
+                    <form class="contact-form">
+                        <div class="input-control i-c-2">
+                            <input type="text" id="name" required placeholder="YOUR NAME">
+                            <input type="email" id="email" required placeholder="YOUR EMAIL">
+                            <!-- <label for="name"></label>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="YOUR NAME"
+                                    required>
+                                <label for="email"></label>
+                                <input name="email" type="email" class="form-control" id="email"
+                                    placeholder="YOUR EMAIL" required> -->
+                        </div>
+                        <div class="input-control">
+                            <input type="text" required placeholder="ENTER SUBJECT">
+                        </div>
+                        <div class="input-control">
+                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                            <div class="submit-btn">
+                                <button type="submit" name="submit" class="main-btn">
+                                    <span class="btn-text">Submit</span>
+                                </button>
                             </div>
                         </div>
-                        <div class="footer-number">
-                            <h4><span>+234 </span><span class="text-secondary">9044348459</span></h4>
-                            <p>alabere007@gmail.com</p>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-8 pb-5">
-                <div class="container p-30">
-                    <div class="single-footer-caption">
-                        <div class="footer-tittle">
-                            <h1 class=" mb-30">Address:</h1>
-                        </div>
-                        <div class="footer-cap text-dark">
-                            <span>Kwara State</span>
-                            <p>16 Ogidi Street, Kiama Road, Kwara.</p>
-                        </div>
-                        <div class="footer-cap text-dark">
-                            <span>Github</span>
-                            <p>Alabere-Coder</p>
-                        </div>
-                        <ul class="social-icons">
-                            <li><a href="https://github.com/Alabere-coder" class="fab fa-github"></a></li>
-                            <li><a href="https://www.linkedin.com/in/isiaq-abdul-azeez-84ba24259/"
-                                    class="fab fa-linkedin"></a></li>
-                            <li><a href="mailto:alabere007@gmail.com" class="far fa-envelope"></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!-- contact form -->
+        </div>
+    </section>
+    <!-- <footer>
+        <div 
+            contact form
             <div id="contact" class="col-xl-5 col-lg-4 col-md-4 col-sm-12 bg-dark pb-30">
                 <div class="container p-30">
                     <div class="row single-footer-caption">
@@ -315,7 +536,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- copyright section -->
     <div class="container position-relative">
