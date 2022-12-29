@@ -16,6 +16,7 @@
     <!-- unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <!-- custom--css -->
     <link rel="stylesheet" href="./styles/service.css">
     <link rel="stylesheet" href="./styles/style.css">
@@ -23,10 +24,10 @@
     <title>Alabere-Coder</title>
 </head>
 
-<body class="active">
+<body>
     <!-- navigation -->
     <div class="nav__body">
-        <div class="container nav__container">
+        <div class="container nav__container animated bounceInLeft">
             <div class="left__nav">
                 <a href="#">
                     <h2><span>A</span>labere</h2>
@@ -56,23 +57,25 @@
         </a>
     </div>
 
-    <section>
-        <div id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-2 col-sm-3"></div>
-                    <div class="col-md-8 col-sm-7">
-                        <h3 class="text-shadow">Hi there, I am Alabere</h3>
-                        <h1 class="text-shadow">I am an awesome software Developer from Kwara State.</h1>
-                    </div>
+
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3"></div>
+                <div class="col-md-8 col-sm-7 ">
+                    <h3 class="text-shadow m-5 animated bounceInRight">Hi there, I am Alabere</h3>
+                    <!-- <h1 class="text-shadow">I am an awesome software Developer from Kwara State.</h1> -->
+                    <h1 id="text"></h1>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+
 
     <!-- about section -->
     <div id="about" class="active">
-        <div class="container about__content">
+        <div class="container about__content animated bounceInLeft">
             <div class="image__container">
                 <img src="./image/about.jpg" class="img__responsive" alt="about img" />
             </div>
@@ -97,7 +100,6 @@
                 <button class="btn"><a href="#skills">skills</a></button>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- service section -->
@@ -486,6 +488,7 @@
         crossorigin="anonymous"></script>
 
     <!-- js--file -->
+    <script src="./js/autotyping.js"></script>
     <script src="./js/server.js"></script>
 </body>
 

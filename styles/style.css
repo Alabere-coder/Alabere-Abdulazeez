@@ -6,7 +6,7 @@
 }
 :root {
     --color-primary: #191d2b;
-    --color-secondary: #ffa500;
+    --color-secondary: #6a5acd;
     --color-white: #FFFFFF;
     --color-black: #000;
     --color-grey0: #f8f8f8;
@@ -18,6 +18,18 @@
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 5px 3px 15px rgba(0,0,0,.3);
+    --light-blue: lightblue;
+    --slateblue: SlateBlue;
+    --first-color: #5361FF;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+    --red-color: #ff0000;
+    --blue-color: #2600ff;
+    --violent-color:#ee82ee;
+    --yellow-color: #ffa500;
+    --purple-color: #6a5acd;
+    --green-color: #3cb371;
 }
 
 .light-mode {
@@ -34,20 +46,8 @@
     --color-grey-5: #f8f8f8;
     --color-grey-6: #12181b;
 }
-:root {
-    --light-blue: lightblue;
-    --slateblue: SlateBlue;
-    --first-color: #5361FF;
-    --white-color: #FAFAFF;
-    --dark-color: #2A3B47;
-    --text-color: #697477;
-    --red-color: #ff0000;
-    --blue-color: #2600ff;
-    --violent-color:#ee82ee;
-    --yellow-color: #ffa500;
-    --purple-color: #6a5acd;
-    --green-color: #3cb371;
-}
+
+
 
 html {
     scroll-behavior: smooth;
@@ -137,10 +137,10 @@ a {
 }
 
 .theme__btn {
-    top: 3rem;
-    right: 3%;
-    width: 70px;
-    height: 70px;
+    top: 0;
+    right: 50%;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--color-white);
     cursor: pointer;
@@ -954,7 +954,7 @@ a {
 
     .theme__btn {
         top: 1rem;
-        right: 45%;
+        left: 55%;
         width: 47px;
         height: 47px;
     }
