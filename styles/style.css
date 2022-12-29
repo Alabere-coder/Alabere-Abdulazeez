@@ -963,6 +963,8 @@ a {
     .contact__btn {
         display: none;
     }
-    
+    .header__btn {
+        display: none;
+    }
 
 }
