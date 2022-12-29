@@ -286,6 +286,19 @@ a {
 
 
 /* SKILLS__SECTION */
+
+.portfolio__container {
+    padding-top: 5rem;
+}
+.portfolio__container .main__title h2 {
+    padding-left: 40%;
+    font-size: 3rem;
+}
+.portfolio__container .main__title h2 span {
+    color: var(--yellow-color);
+    font-weight: 800;
+}
+
 .about-stats {
     padding-bottom: 4rem;
 }
@@ -363,6 +376,7 @@ a {
 }
 
 /* potfolio---part */
+
 .port-text {
     padding: 2rem 0;
     text-align: center;
