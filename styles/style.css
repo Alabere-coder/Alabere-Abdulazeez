@@ -247,8 +247,8 @@ a {
 
 .about__container .disign {
     position: absolute;
-    top: -0.5rem;
-    left: 40%;
+    top: 3rem;
+    left: 68%;
     height: 2rem;
     width: 18rem;
     margin-bottom: rem;
@@ -724,12 +724,10 @@ a {
 }
 
 .header__btn {
-    background: linear-gradient(-30deg, #e5a55d, #ff7b02 #e5a55d);
     background: #fff;
     position: absolute;
     left: 3%;
     top: 8vw;
-    z-index: 100;
 }
 .header__btn:hover {
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
@@ -953,89 +951,18 @@ a {
         margin-bottom: 2rem;
         font-size: 20px;
     }
+
+    .theme__btn {
+        top: 1rem;
+        right: 45%;
+        width: 47px;
+        height: 47px;
+    }
     
 
+    .contact__btn {
+        display: none;
+    }
+    
 
-  .timeline {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .main-title h2 {
-    font-size: 3rem;
-  }
-  .main-title h2 span {
-    font-size: 3rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 4rem;
-  }
-
-    /* {
-        display: flex;
-        flex-direction: row;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .about__content {
-        padding-left: 1rem; 
-        padding-right: 1rem;
-        gap: 4rem;
-    }
-    .about__container {
-        padding-top: 2rem;
-    }
-    .about__container .info1 {
-        margin-right: -2rem;
-        margin-bottom: 2rem;
-        font-size: 18px;
-    }
-    .about__container .info2 {
-        margin-right: -2rem;
-        margin-bottom: 2rem;
-        font-size: 18px;
-    }
-
-    .about__container h2 {
-        padding-bottom: 2rem;
-        text-shadow: 10px 10px 6px black;
-    }
-
-    .about__container .disign {
-        height: 2rem;
-        width: 16rem;
-        border: 2px solid var(--text-color);
-        background: var(--white-color);
-        border-radius: 20px;
-        position: absolute;
-        left: 13rem;
-        box-shadow: 10px 10px 6px black;
-
-    }
-    .about__container button {
-        
-        height: 3rem;
-        width: 5rem;
-        border: 2px solid var(--text-color);
-        background: var(--text-color);
-    }
-    .about__container button:hover {
-        background: transparent;
-    }
-    .about__container button a {
-        text-decoration: none;
-        color: var(--white-color);
-        font-style: italic;
-        font-weight: 700;
-        font-size: 1rem;
-    }
-    .image__container .img__responsive {
-        width: 27rem;
-        height: 25rem;
-    }
-    .image__container {
-        width: 27rem;
-        height: 25rem;
-        border: 1px solid;
-        box-shadow: 5px 10px 40px 10px rgb(14, 13, 13);
-    } */
 }
