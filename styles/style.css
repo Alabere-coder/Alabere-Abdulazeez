@@ -132,7 +132,7 @@ a {
 }
 
 .right__nav ul li a:hover {
-    color: var(--dark-color);
+    color: var(--color-grey-1);
     border: 2px solid rgb(77, 75, 75);
     padding: 10px;
     border-radius: 20px;
@@ -219,12 +219,12 @@ a {
 }
 .about__container .info1 {
     width: fit-content;
-    font-size: 18px;
+    font-size: 16px;
 }
 .about__container .info2 {
     padding-bottom: 2rem;
     width: 95%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .about__container h2 {
@@ -808,7 +808,7 @@ a {
         height: fit-content;
         width: 18rem;
         flex-direction: column;
-        gap: -1rem;
+        gap: -2rem;
         display: flex;
     }
     .nav__menu li {
@@ -841,7 +841,7 @@ a {
         }
     }
     .nav__menu li a {
-        background: var(--color-grey-4);
+        background: var(--dark-color);
         box-shadow: -4rem 6rem  10rem rgba(0, 0, 0, 0.6);
         width: 90%;
         height: 100%;
@@ -970,12 +970,12 @@ a {
     .about__container .info1 {
         width: 100%;
         margin-bottom: 2rem;
-        font-size: 20px;
+        font-size: 17px;
     }
     .about__container .info2 {
         width: 100%;
         margin-bottom: 1rem;
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .theme__btn {
