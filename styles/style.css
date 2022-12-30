@@ -191,29 +191,7 @@ a {
     padding-top: 180px;
     padding-bottom: 100px;
 }
-/* #home::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgb(2, 0, 36);
-    background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 0.05085784313725494) 0%,
-    rgba(14, 9, 121, 0.12368697478991597) 50%,
-    rgba(13, 37, 56, 1) 100%);
-} */
-
     /* about section */
-.about__content {
-    display: flex;
-    flex-direction: row;
-    /* padding-top: 60px; */
-    padding-bottom: 60px;
-}
 
 .about__content {
     position: relative;
@@ -221,37 +199,36 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
-    padding-top: 3rem;
-    padding-left: 4rem;
-    padding-right: 5rem;
-    gap: 4rem;
+    align-items: center;
+    /* border: 2px solid red; */
+    padding-top: 2rem;
+    padding-bottom: 40px;
+    gap: 3rem;
 }
 .about__container {
-    /* position: relative; */
+    position: relative;
     padding: 1px;
     margin-top: 0rem;
 }
 .about__container .info1 {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    width: fit-content;
     font-size: 18px;
 }
 .about__container .info2 {
-    margin-right: 8rem;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    width: 95%;
     font-size: 18px;
 }
 
 .about__container h2 {
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     text-shadow: 10px 10px 6px black;
 }
 
 .about__container .disign {
     position: absolute;
-    top: 3rem;
-    left: 63%;
+    top: 0;
+    right: 1rem;
     height: 2rem;
     width: 18rem;
     margin-bottom: rem;
@@ -262,7 +239,6 @@ a {
 
 }
 .about__container button {
-    
     height: 3rem;
     width: 5rem;
     border: 2px solid var(--text-color);
@@ -279,24 +255,26 @@ a {
     font-size: 1rem;
 }
 .image__container .img__responsive {
-    width: 25rem;
+    width: 29rem;
     height: 25rem;
-    
+    /* width: 100%;
+    height: 100%; */
+    border-radius: 15px;
 }
 .image__container {
     border: 1px solid;
     box-shadow: 5px 10px 40px 10px rgb(14, 13, 13);
+    /* padding-right: 2rem; */
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 15px;
+    height: 400px;
+    
 }
 
 
 /* SKILLS__SECTION */
 
 .portfolio__container {
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 .portfolio__container .main__title h2 {
     padding-left: 40%;
@@ -386,7 +364,7 @@ a {
 /* potfolio---part */
 
 .port-text {
-    padding: 2rem 0;
+    padding: 1rem 0;
     text-align: center;
 }
 
@@ -895,7 +873,7 @@ a {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 1rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
     .about-stats .progress-bars {
         grid-template-columns: repeat(1, 1fr);
@@ -943,6 +921,7 @@ a {
     }
 
     .about__content {
+        max-width: 95%;
         color: var(--color-black);
         display: flex;
         flex-direction: column;
@@ -950,26 +929,45 @@ a {
         align-items: center; 
         padding-top: 3rem;
         /* padding-left: 2rem; */
-        padding-right: 5rem;
-        gap: 4rem;
+        /* padding-right: 5rem; */
+        gap: 2rem;
+    }
+    .image__container {
+        max-width: 95%;
+        border: 1px solid;
+        box-shadow: 5px 10px 40px 10px rgb(14, 13, 13);
+        width: 135%;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        
+    }
+    .image__container .img__responsive {
+        /* width: 25rem;
+        height: 25rem; */
+        /* margin-left: 6rem; */
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    .about__container {
+        /* position: relative; */
+        padding: 1px;
+        margin-top: 0rem;
     }
     .about__container .disign {
-        position: absolute;
-        top: 32rem;
-        left: 63%;
         height: 2rem;
         width: 10rem;
-        margin-bottom: rem;
     } 
     
     .about__container .info1 {
-        /* width: 125%; */
+        width: 100%;
         margin-bottom: 2rem;
         font-size: 20px;
     }
     .about__container .info2 {
-        width: 120%;
-        margin-bottom: 2rem;
+        width: 100%;
+        margin-bottom: 1rem;
         font-size: 20px;
     }
 
@@ -992,15 +990,18 @@ a {
         padding-top: 5rem;
     }
     .portfolio__container .main__title h2 {
+        /* text-align: center; */
         padding-left: 20%;
         font-size: 3rem;
     }
     .portfolio__container .main__title h2 span {
         color: var(--yellow-color);
         font-weight: 800;
+        /* text-align: center; */
     }
     .portfolio__container .main__title h2 cite {
         padding-left: 25%;
+        /* text-align: center; */
     }
 
 }
