@@ -72,7 +72,7 @@ a {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    left: 3.4rem;
+    left: 5%;
     top: 1%;
     height: 3rem;
     z-index: 100;
@@ -82,7 +82,7 @@ a {
 }
 
 .nav__container .left__nav {
-    float: left;
+    /* float: left; */
     margin-left: 1%;
     padding-left: 1.2rem;
     /* height: 3rem;
@@ -789,7 +789,9 @@ a {
         font-size: 1.1rem;
     }
 
-    
+    .nav__container {
+        left: 0;
+    }
     .right__nav button {
         display: inline-block;
         background: transparent;
@@ -849,22 +851,6 @@ a {
         place-items: center;
         border-radius: 10px
     }
-    /* .nav__menu li:nth-child(2) a {
-        background: var(--violent-color);
-    }
-    .nav__menu li:nth-child(3) a {
-        background: var(--purple-color);
-    }
-    .nav__menu li:nth-child(4) a {
-        background: var(--green-color);
-    }
-    .nav__menu li:nth-child(5) a {
-        background: var(--blue-color);
-    }
-    .nav__menu li a:hover {
-        background: #2A3B47;
-        color: #fff;
-    } */
 
 
     .container__wrapper {
