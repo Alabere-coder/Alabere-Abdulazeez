@@ -11,35 +11,44 @@
 
 .container__wrapper {
     background-image: url(../image/World_map.png);
-    display: grid;
+    /* display: grid;
     width: 100%;
     height: 100%;
     margin-top: 10%;
     margin-left: 0;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+    gap: 20px;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 3rem;
+} 
 .container__wrapper .container__1:nth-child(1) {
     padding-bottom: 20rem;
 }
 .container__1 {
     position: relative;
+    border-radius: 15px;
     height: 20rem;
 }
 
 .icon img {
     /* border: 2px solid; */
     position: absolute;
-    justify-content: center;
+    /* justify-content: center;
     align-items: center;
     top: 0;
     width: 19rem;
-    height: 19rem;
+    height: 19rem; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
     /* border-radius: 10px; */
 }
 
 .divider__wrapper h2 {
-    padding-bottom: 4px;
+    padding-bottom: 8px;
     position: absolute;
     top: 2rem;
     left: 3rem;
@@ -64,10 +73,10 @@
     bottom: 0;
     background: black;
     color: white;
-    width: 19rem;
-    height: 19rem;
-    /* border-radius: 10px; */
-    /* padding: 15px; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
     transform: perspective(600px) rotateY(180deg);
     transition: transform .5s linear 0s;
     backface-visibility: hidden;
