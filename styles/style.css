@@ -365,37 +365,37 @@ display: block;
     font-weight: 800;
 }
 
-.about-stats {
+.skills__stats {
     padding-bottom: 4rem;
 }
-.about-stats .progress-bars {
+.skills__stats .progress__bars {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
-.about-stats .progress-bars .progress-bar {
+.skills__stats .progress__bar {
     display: flex;
     flex-direction: column;
 }
-.about-stats .progress-bars .progress-bar .prog-title {
+.skills__stats .prog__title {
     text-transform: uppercase;
     font-weight: 500;
 }
-.about-stats .progress-bars .progress-bar .progress-con {
+.skills__stats .progress__con {
     display: flex;
     align-items: center;
 }
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+.skills__stats .prog__value {
     color: var(--color-grey-2);
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress {
+.skills__stats .progress {
     width: 100%;
     height: 0.45rem;
     background-color: var(--color-grey-6);
     margin-left: 1rem;
     position: relative;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
+.skills__stats .progress span {
     position: absolute;
     top: 0;
     left: 0;
@@ -404,33 +404,33 @@ display: block;
     transition: all 0.4s ease-in-out;
     width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+.skills__stats .progress .html {
     width: 85%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+.skills__stats .progress .css {
     width: 80%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
+.skills__stats .progress .js {
     width: 70%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
+.skills__stats .progress .react {
     width: 70%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .node {
+.skills__stats .progress .node {
     width: 60%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+.skills__stats .progress .python {
     width: 68%;
 }
 
-.stat-title {
+.stat__title {
     text-transform: uppercase;
     font-size: 1.4rem;
     text-align: center;
     padding: 3.5rem 0;
     position: relative;
 }
-.stat-title::before {
+.stat__title::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -910,7 +910,7 @@ display: block;
         grid-gap: 1rem;
         margin-top: 2rem;
     }
-    .about-stats .progress-bars {
+    .skills__stats .progress__bars {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -1043,5 +1043,15 @@ display: block;
 @media screen and (max-width: 1240px) {
     .theme__btn {
     top: 0;
+    }
+    .about__content {
+        max-width: 95%;
+        color: var(--color-black);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; 
+        padding-top: 3rem;
+        gap: 2rem;
     }
 }

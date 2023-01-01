@@ -41,7 +41,7 @@
     padding-bottom: 8px;
     position: absolute;
     top: 2rem;
-    left: 3rem;
+    left: 3%;
 }
 
 .divider__wrapper p {
@@ -71,6 +71,9 @@
     transition: transform .5s linear 0s;
     backface-visibility: hidden;
 }
+/* #services .services__title .back h2 {
+    padding-left: 10%;
+} */
 
 #services .icon-1 img {
     position: absolute;
