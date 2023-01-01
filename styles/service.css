@@ -16,7 +16,7 @@
 .container__wrapper {
     background-image: url(../image/World_map.png);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
 } 
@@ -30,18 +30,11 @@
 }
 
 .icon img {
-    /* border: 2px solid; */
     position: absolute;
-    /* justify-content: center;
-    align-items: center;
-    top: 0;
-    width: 19rem;
-    height: 19rem; */
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
-    /* border-radius: 10px; */
 }
 
 .divider__wrapper h2 {
@@ -88,43 +81,18 @@
 
 .container__1:nth-child(1) .back {
     background-color: var(--color-secondary);
-    /* background-image: url("../image/icon/web-design.png"); */
-    background-size: contain;
-    width: 19rem;
-    height: 19rem;
-    border: 2px solid;
 }
 .container__1:nth-child(2) .back {
     background-color: var(--color-secondary);
-    /* background-image: url("../image/icon/backend.png"); */
-    background-size: contain;
-    width: 19rem;
-    height: 19rem;
-    border: 2px solid;
 }
 .container__1:nth-child(3) .back {
     background-color: var(--color-secondary);
-    /* background-image: url("../image/icon/development.png"); */
-    background-size: contain;
-    width: 19rem;
-    height: 19rem;
-    border: 2px solid;
 }
 .container__1:nth-child(4) .back {
     background-color: var(--color-secondary);
-    /* background-image: url("../image/icon/programmer.png"); */
-    background-size: contain;
-    width: 19rem;
-    height: 19rem;
-    border: 2px solid;
 }
 .container__1:nth-child(5) .back {
     background-color: var(--color-secondary);
-    /* background-image: url("../image/icon/regression.png"); */
-    background-size: contain;
-    width: 19rem;
-    height: 19rem;
-    border: 2px solid;
 }
 .divider__wrapper {
     color: white;

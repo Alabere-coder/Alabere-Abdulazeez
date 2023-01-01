@@ -6,8 +6,9 @@
 
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle
-        ('window-scroll', window.scrollY > 20);
+        ('window-scroll', window.scrollY > 0);
 })
+
 
 
 
@@ -25,6 +26,7 @@ textBtns.forEach(textBtn => {
 const menu = document.querySelector('.nav__menu');
 const openBtn = document.querySelector('#open-menu-btn');
 const closeBtn = document.querySelector('#close-menu-btn');
+
 
 openBtn.addEventListener('click', () => {
     menu.style.display = 'flex';
