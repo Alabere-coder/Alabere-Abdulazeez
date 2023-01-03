@@ -79,7 +79,7 @@
     position: absolute;
     width: 19rem;
     height: 19rem;
-    z-index: 100;
+    z-index: 1;
 }
 
 .container__1:nth-child(1) .back {
