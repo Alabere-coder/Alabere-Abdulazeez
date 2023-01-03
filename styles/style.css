@@ -44,8 +44,8 @@
     --color-grey-4: #fff;
     --light-dark-color: #080808;
     /* --color-grey-4: #454e56; */
-    --color-grey-5: #f8f8f8;
-    --color-grey-6: #12181b;
+    --color-grey-5: rgb(41, 37, 37);
+    --color-grey-6: #272e31;
 }
 
 
@@ -67,88 +67,7 @@ a {
     font-family: inherit;
 }
 
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-}
-input[type=checkbox]{
-    display: none;
-} 
 
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: teal;
-    color: #fff;
-}
-
-.nav-links a {
-color: #fff;
-}
-
-/* LOGO */
-
-.logo {
-font-size: 32px;
-}
-
-/* NAVBAR MENU */
-
-.menu {
-
-display: flex;
-gap: 1em;
-font-size: 18px;
-}
-
-.menu li:hover {
-background-color: #4c9e9e;
-border-radius: 5px;
-transition: 0.3s ease;
-}
-
-.menu li {
-padding: 5px 14px;
-
-}
-
-/* DROPDOWN MENU */
-
-.services {
-position: relative; 
-}
-
-.dropdown {
-background-color: rgb(1, 139, 139);
-padding: 1em 0;
-position: absolute; /*WITH RESPECT TO PARENT*/
-display: none;
-border-radius: 8px;
-top: 35px;
-}
-
-.dropdown li + li {
-margin-top: 10px;
-}
-
-.dropdown li {
-padding: 0.5em 1em;
-width: 8em;
-text-align: center;
-}
-
-.dropdown li:hover {
-background-color: #4c9e9e;
-}
-
-.services:hover .dropdown {
-display: block;
-
-}
 
 /* .nav__container {
     display: flex;
@@ -231,7 +150,7 @@ display: block;
 }
 .theme__btn i {
     /* padding-top: 1rem; */
-    font-size: 30px;
+    font-size: 23px;
     color: var(--light-dark-color);
     pointer-events: none;
 }
@@ -343,7 +262,7 @@ display: block;
 }
 .image__container {
     border: 1px solid;
-    box-shadow: 5px 10px 40px 10px rgb(14, 13, 13);
+    /* box-shadow: 5px 10px 40px 10px rgb(14, 13, 13); */
     /* padding-right: 2rem; */
     width: 100%;
     height: 400px;
@@ -526,6 +445,7 @@ display: block;
 /* contact section */
 .contact-content-con {
     display: flex;
+    flex-direction: column;
     padding-top: 3.5rem;
 }
 .contact-content-con .left-contact {
@@ -619,7 +539,6 @@ display: block;
 }
 .main-btn {
     border-radius: 30px;
-    color: inherit;
     font-weight: 600;
     position: relative;
     top: 2rem;
@@ -631,7 +550,7 @@ display: block;
 }
 .main-btn .btn-text {
     padding: 1rem 2rem;
-    color: var(--color-grey-3);
+    color: var(--color-black);
     font-weight: 800;
 }
 
@@ -644,13 +563,15 @@ display: block;
     transition: all 0.4s ease-out;
     z-index: 1;
 }
-.main-btn:hover {
+.main-btn .btn-text:hover{
     transition: all 0.4s ease-out;
+    color: var(--color-black);
 }
 .main-btn:hover::before {
     width: 100%;
     height: 100%;
-    background-color: var(--color-secondary);
+    color: var(--color-black);
+    background: var(--green-color);
     transform: translateX(0);
     transition: all 0.4s ease-out;
 }
@@ -794,8 +715,8 @@ display: block;
 .contact__btn {
     color: #000e17;
     border: 1px solid #000e17;
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -806,14 +727,14 @@ display: block;
 .header__btn {
     background: #fff;
     position: absolute;
-    left: 3%;
-    top: 8vw;
+    left: 9%;
+    /* top: 8vw; */
 }
-.header__btn:hover {
+/* .header__btn:hover {
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
     color: #000e17;
     transform: translateY(-1rem);
-}
+} */
 .contact__btn i {
     font-size: 3.5rem;
     position: absolute;
@@ -821,15 +742,15 @@ display: block;
 .header__btn p {
     font-size: 1rem;
     font-weight: 600;
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     animation: spinText 15s linear infinite;
 }
 .header__btn p span {
     position: absolute;
-    transform-origin: 0.3rem 5rem ;
+    transform-origin: 0.4rem 8rem ;
 }
 
 @keyframes spinText {
@@ -968,7 +889,6 @@ display: block;
     .image__container {
         max-width: 95%;
         border: 1px solid;
-        box-shadow: 5px 10px 40px 10px rgb(14, 13, 13);
         width: 135%;
         height: 350px;
         object-fit: cover;
