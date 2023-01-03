@@ -156,8 +156,12 @@ a {
 }
 .theme__btn:hover {
     color: var(--color-white);
-    box-shadow: 4px 3px 15px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 4px 3px 15px rgba(0, 0, 0, 0.3); */
     /* background: var(--color-secondary); */
+}
+
+.bg-dark {
+    color: --light-dark-color;
 }
 
 /* to change nav style on scroll with js */
@@ -714,9 +718,9 @@ a {
 /* CONTACT-----BUTTON */
 .contact__btn {
     color: #000e17;
-    border: 1px solid #000e17;
-    width: 15rem;
-    height: 15rem;
+    /* border: 1px solid #000e17; */
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     display: grid;
     place-items: center;
@@ -728,7 +732,7 @@ a {
     background: #fff;
     position: absolute;
     left: 9%;
-    /* top: 8vw; */
+    top: 8vw;
 }
 /* .header__btn:hover {
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.3);
@@ -742,15 +746,15 @@ a {
 .header__btn p {
     font-size: 1rem;
     font-weight: 600;
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     display: flex;
     justify-content: center;
     animation: spinText 15s linear infinite;
 }
 .header__btn p span {
     position: absolute;
-    transform-origin: 0.4rem 8rem ;
+    transform-origin: 0.4rem 5rem ;
 }
 
 @keyframes spinText {
