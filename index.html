@@ -28,6 +28,14 @@
     <link rel="stylesheet" href="./styles/style.css">
 
     <title>Alabere-Coder</title>
+
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("VLxKXNmYPBm0OoYtP");
+        })();
+    </script> -->
 </head>
 
 <body>
@@ -77,9 +85,10 @@
             <div class="row">
                 <div class="col-md-2 col-sm-3"></div>
                 <div class="col-md-8 col-sm-7 ">
-                    <h3 class="text-shadow m-5 animated bounceInRight">Hi there, I am Alabere</h3>
+                    <h3 class="text-shadow m-5 text-bold animated bounceInRight">Hi there, I
+                        am <span><b>A</b>labere</span></h3>
                     <!-- <h1 class="text-shadow">I am an awesome software Developer from Kwara State.</h1> -->
-                    <h1 class="animated bounceInLeft" id="text"></h1>
+                    <h1 class="animated bounceInLeft pl-5" id="text"></h1>
                 </div>
             </div>
             <div class="container py-5 d-lg-none">
@@ -96,7 +105,7 @@
 
 
     <!-- about section -->
-    <div id="about" class="active">
+    <div id="about">
         <div class="container">
             <div class="about__content d-md-flex animated bounceInLeft">
                 <div class="image__container">
@@ -106,7 +115,7 @@
                     <h2>About Me</h2>
                     <div class="disign"></div>
                     <p class="info1">
-                        I am <span>Alabere Abdulazeez</span>, a frontend developer, that loves building
+                        I am <span>Alabere Abdulazeez</span>, a software developer, that loves building
                         opensource
                         applications
                         for the
@@ -373,6 +382,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="progress__bar">
+                        <p class="prog__title">TAILWIND CSS</p>
+                        <div class="progress__con">
+                            <p class="prog__value">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -450,22 +468,22 @@
                 </div>
 
 
-                <div class="right__contact">
-                    <form class="contact-form">
+                <div class="right__contact py-lg-5">
+                    <form class="contact-form" onsubmit="sendEmail(); reset(); return false;">
                         <div class="input-control i-c-2">
-                            <input type="text" id="name" required placeholder="YOUR NAME">
+                            <input type="text" id="fullname" required placeholder="YOUR NAME">
                             <input type="email" id="email" required placeholder="YOUR EMAIL">
                         </div>
                         <div class="input-control">
-                            <input type="text" required placeholder="ENTER SUBJECT">
+                            <input type="text" id="subject" required placeholder="ENTER SUBJECT">
                         </div>
                         <div class="input-control">
-                            <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            <div class="submit-btn py-lg-4">
-                                <button type="submit" name="submit" class="main-btn">
-                                    <span class="btn-text">Submit</span>
-                                </button>
-                            </div>
+                            <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="submit" name="submit" class="main-btn">
+                                <span class="btn-text">Submit</span>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -487,7 +505,7 @@
                 <div class="modal-body">
                     <p class="lead">Planning on something wonderful? i would be super happy to be part of
                         that journey. Feel free to reach me on</p>
-                    <form>
+                    <form onsubmit="sendEmail(); reset(); return false;">
                         <div class="mb-3">
                             <label for="fullName" class="col-form-label">
                                 Full Name:
@@ -500,12 +518,12 @@
                             </label>
                             <input type="email" class="form-control" id="email" placeholder="Email" required>
                         </div>
-                        <!-- <div class="mb-3">
-                            <label for="first-name" class="col-form-label">
-                                Phone:
+                        <div class="mb-3">
+                            <label for="email" class="col-form-label">
+                                Subject:
                             </label>
-                            <input type="text" class="form-control" id="phone">
-                        </div> -->
+                            <input type="text" class="form-control" id="subject" required placeholder="ENTER SUBJECT">
+                        </div>
                         <div>
                             <textarea name="message" id="message" cols="30" rows="5"
                                 placeholder="Message Here..."></textarea>
@@ -517,10 +535,6 @@
                         </div>
                     </form>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div> -->
             </div>
         </div>
     </div>
@@ -547,6 +561,23 @@
         crossorigin="anonymous"></script>
 
     <!-- js--file -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "alabere007@gmail.com",
+                Password: "Alabere4real",
+                To: 'alabere4rel247@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "This is the subject",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
     <script src="./js/jquery.js"></script>
     <script src="./js/autotyping.js"></script>
     <script src="./js/server.js"></script>

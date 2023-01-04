@@ -23,22 +23,49 @@ textBtns.forEach(textBtn => {
 
 // TO SHOW HIDE NAV MENU
 
-const menu = document.querySelector('.nav__menu');
-const openBtn = document.querySelector('#open-menu-btn');
-const closeBtn = document.querySelector('#close-menu-btn');
+// const menu = document.querySelector('.nav__menu');
+// const openBtn = document.querySelector('#open-menu-btn');
+// const closeBtn = document.querySelector('#close-menu-btn');
 
 
-openBtn.addEventListener('click', () => {
-    menu.style.display = 'flex';
-    closeBtn.style.display = 'inline-block';
-    openBtn.style.display = 'none';
-})
+// openBtn.addEventListener('click', () => {
+//     menu.style.display = 'flex';
+//     closeBtn.style.display = 'inline-block';
+//     openBtn.style.display = 'none';
+// })
 
 
-const closeNav = () => {
-    menu.style.display = 'none';
-    closeBtn.style.display = 'none';
-    openBtn.style.display = 'inline-block';
-}
+// const closeNav = () => {
+//     menu.style.display = 'none';
+//     closeBtn.style.display = 'none';
+//     openBtn.style.display = 'inline-block';
+// }
 
-closeBtn.addEventListener('click', closeNav)
+// closeBtn.addEventListener('click', closeNav)
+
+
+// function sendMail() {
+//     var params = {
+//         name: document.getElementById("fullname").value,
+//         email: document.getElementById("email").value,
+//         subject: document.getElementById("subject").value,
+//         message: document.getElementById("message").value,
+//     };
+
+//     const serviceID = "service_uy4h9gn";
+//     const templateID = "template_iob2c0t"
+
+//     emailjs.send(serviceID, templateID, params, publicKey)
+//         .then(
+//             res => {
+//                 document.getElementById("fullname").value = "";
+//                 document.getElementById("email").value = "";
+//                 document.getElementById("subject").value = "";
+//                 document.getElementById("message").value = "";
+//                 console.log(res);
+//                 alert("message sent successfully")
+//             }
+//         )
+//         .catch((err) => console.log(err));
+// }
+
