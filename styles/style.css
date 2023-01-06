@@ -665,7 +665,7 @@ a {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    display: grid;
+    display: none;
     place-items: center;
     cursor: pointer;
     transition: all 400ms ease;
