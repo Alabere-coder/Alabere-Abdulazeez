@@ -766,11 +766,18 @@ a {
     .container__wrapper {
         background-image: url(../image/World_map.png);
         display: grid;
-        width: 100%;
+        width: 93%;
         height: 100%;
+        margin-left: 2rem;
         margin-top: 10%;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+    }
+    .back {
+        text-align: center;
+        position: absolute;
+        width: 90%;
+        height: 300px;
     }
     .portfolios {
         display: grid;
