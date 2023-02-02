@@ -736,7 +736,7 @@ a {
     .container__wrapper {
         background-image: url(../image/World_map.png);
         display: grid;
-        width: 93%;
+        width: 98%;
         height: 100%;
         margin-left: 1rem;
         margin-top: 10%;
