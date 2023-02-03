@@ -96,7 +96,7 @@
 }
 .divider__wrapper {
     color: white;
-    transform: perspective(600px) rotateY(10deg);
+    transform: perspective(600px) rotateY(1deg);
     transition: all 400ms ease;
 }
 

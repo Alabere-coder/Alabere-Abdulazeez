@@ -736,7 +736,7 @@ a {
     .container__wrapper {
         background-image: url(../image/World_map.png);
         display: grid;
-        width: 98%;
+        width: 100%;
         height: 100%;
         /* margin-left: 4px; */
         margin-top: 10%;
@@ -745,7 +745,7 @@ a {
     }
     .back {
         position: absolute;
-        width: 90%;
+        width: 100%;
         height: 300px;
     }
     .portfolios {
