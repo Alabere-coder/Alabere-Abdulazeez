@@ -93,7 +93,7 @@
                     <h3 class="text-shadow m-5 text-bold animated bounceInRight">Hi there, I
                         am <span><b>A</b>labere</span></h3>
                     <!-- <h1 class="text-shadow">I am an awesome software Developer from Kwara State.</h1> -->
-                    <h1 class="animated bounceInLeft pl-5 text-bg-primary" id="text"></h1>
+                    <h1 class="animated bounceInLeft d-block pl-5 text-bg-primary" id="text"></h1>
                 </div>
             </div>
             <div class="container py-5 d-lg-none">
@@ -106,7 +106,19 @@
 
     <!-- Modal -->
     <!-- Button trigger modal -->
+    <div>
+        <button class="open-button" onclick="openForm()">Chat</button>
+        <div class="chat-popup" id="myForm">
+            <form action="/" class="form-container">
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
 
+    </div>
 
 
     <!-- about section -->

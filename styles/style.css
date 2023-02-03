@@ -174,7 +174,7 @@ a {
     border: 2px solid var(--text-color);
     background: var(--white-color);
     border-radius: 20px;
-    box-shadow: 10px 10px 6px black;
+    box-shadow: 4px 10px 6px black;
 
 }
 .about__container button {

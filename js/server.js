@@ -9,8 +9,13 @@ window.addEventListener('scroll', () => {
         ('window-scroll', window.scrollY > 0);
 })
 
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
 
-
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
 
 const textBtns = document.querySelectorAll('.contact__btn');
 
