@@ -74,3 +74,27 @@ textBtns.forEach(textBtn => {
 //         .catch((err) => console.log(err));
 // }
 
+function displayRandomText() {
+    var messages = [
+        "Hello, World!",
+        "Welcome to the Random Text Program",
+        "Have a great day!",
+        "Stay positive and keep smiling!",
+        "Keep learning and keep growing!",
+    ];
+
+    var randomIndex = Math.floor(Math.random() * messages.length);
+    document.getElementById("text-message").innerHTML = messages[randomIndex];
+}
+
+var i = 0;
+var text = "Welcome to the auto typing text program!";
+var speed = 50;
+
+function typeText() {
+    if (i < text.length) {
+        document.getElementById("display").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeText, speed);
+    }
+}
